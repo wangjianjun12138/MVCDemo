@@ -1,0 +1,23 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>管理员登录</title>
+</head>
+<body>
+    <div> 
+        <form method="post" action="/SysAdmin/AdminLogin">
+            用户名：<input name="loginId" type="text">
+            密码：<input name="loginPwd" type="password"><br>
+            <input type="submit" value="登录"><br>
+            @ViewData["info"]
+        </form>
+    </div>
+</body>
+</html>
